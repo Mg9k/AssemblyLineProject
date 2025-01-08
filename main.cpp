@@ -1,9 +1,3 @@
-// Final Project
-// Milestone 3
-// ms3_prof.cpp
-// Winter 2021
-// Chris Szalwinski
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -54,7 +48,7 @@ int main()
 			station->Station::display(cout, true);
 		cout << endl << endl;
 
-		//Select an object and verify all the functionality it working
+		// Select an object and verify all the functionality it working
 		cout << "========================================" << endl;
 		cout << "=          Manual Validation           =" << endl;
 		cout << "========================================" << endl;
@@ -95,7 +89,7 @@ int main()
 		cout << "========================================" << endl;
 		cout << "=           Filling Orders             =" << endl;
 		cout << "========================================" << endl;
-		//run the assembly line until all orders processed
+		// Run the assembly line until all orders processed
 		while (!lm.run(cout));		
 		cout << endl << endl;
 	}
@@ -125,7 +119,7 @@ int main()
 		theItem->display(cout, true);
 	cout << endl;
 
-	// cleanup
+	// Cleanup
 	for (auto station : theStations)
 		delete station;
 
